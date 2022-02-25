@@ -1,8 +1,8 @@
 {
-  "name": "slub/slub-digitalcollections",
+  "name": "bfallert/slub-digitalcollections",
   "type": "typo3-cms-extension",
-  "description": "Templates, Styles and Configuration for the Kitodo.Presentation based Digital Collections by SLUB Dresden",
-  "homepage": "https://github.com/slub/slub_digitalcollections",
+  "description": "Templates, Styles and Configuration for the Kitodo.Presentation based Digital Collections by SLUB Dresden. Adaption for UB Mannheim",
+  "homepage": "https://github.com/BFallert/slub_digitalcollections",
   "keywords": [
     "TYPO3",
     "extension",
@@ -22,6 +22,11 @@
     {
       "name": "Thomas Jung",
       "email": "slub@jung.digital",
+      "role": "Developer"
+    },
+    {
+      "name": "Bernd Fallert",
+      "email": "bernd.fallert@bib.uni-mannheim.de",
       "role": "Developer"
     }
   ],
