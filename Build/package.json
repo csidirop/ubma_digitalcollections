@@ -1,6 +1,6 @@
 {
   "name": "slub-digitalcollections",
-  "description": "This TYPO3 extension provides the configuration and setup for the Digital Collections by SLUB Dresden",
+  "description": "This TYPO3 extension provides the configuration and setup for the Digital Collections by SLUB Dresden, adaptations to UL Mannheim",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git@git.slub-dresden.de:slub-webseite/slub_digitalcollections.git"
   },
-  "author": "Alexander Bigga",
+  "author": "Alexander Bigga, Bernd Fallert",
   "license": "GPL-3.0-or-later",
   "homepage": "https://digital.slub-dresden.de",
   "devDependencies": {
