@@ -5675,12 +5675,15 @@ ul {
 ul.facets, ul.facet-option-list, ul.pagination {
   list-style-type: none; }
 
-a {
+a:not(.dlf-slub-logo):not(.dlf-ubma-logo) {
   color: #232E58;
-  border-bottom: 0.1875rem solid #D1D7DF; }
-  a:hover {
-    color: #455D82;
-    border-color: #ABB8CA; }
+  border-bottom: 0.1875rem solid #D1D7DF;
+
+    &:hover {
+        color: #455D82;
+        border-color: #ABB8CA;
+    }
+}
   a.no-underline {
     border: none; }
   a.underline-on-hover {
