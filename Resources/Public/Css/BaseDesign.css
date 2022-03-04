@@ -160,6 +160,212 @@ a img {
  * Author: Bernd Fallert <bernd.fallert@bib.uni-mannheim.de>
   *
  */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body.colletions h1,
+body.listview h1,
+body.colletions .h1,
+body.listview .h1,
+body.colletions h2,
+body.listview h2,
+body.colletions .h2,
+body.listview .h2,
+body.colletions h3,
+body.listview h3,
+body.colletions .h3,
+body.listview .h3,
+body.colletions h4,
+body.listview h4,
+body.colletions .has-subheadline + .subheadline,
+body.listview .has-subheadline + .subheadline,
+body.colletions .h4,
+body.listview .h4,
+body.colletions .h4,
+body.listview .h4,
+body.colletions h5,
+body.listview h5,
+body.colletions .h5,
+body.listview .h5,
+body.colletions h6,
+body.listview h6,
+body.colletions .h6,
+body.listview .h6 {
+  font-family: "myriad-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+body.colletions h1 small,
+body.listview h1 small,
+body.colletions .h1 small,
+body.listview .h1 small,
+body.colletions h2 small,
+body.listview h2 small,
+body.colletions .h2 small,
+body.listview .h2 small,
+body.colletions h3 small,
+body.listview h3 small,
+body.colletions .h3 small,
+body.listview .h3 small,
+body.colletions h4 small,
+body.listview h4 small,
+body.colletions .has-subheadline + .subheadline small,
+body.listview .has-subheadline + .subheadline small,
+body.colletions .h4 small,
+body.listview .h4 small,
+body.colletions .h4 small,
+body.listview .h4 small,
+body.colletions h5 small,
+body.listview h5 small,
+body.colletions .h5 small,
+body.listview .h5 small,
+body.colletions h6 small,
+body.listview h6 small,
+body.colletions .h6 small,
+body.listview .h6 small {
+  line-height: 0;
+  color: #D1D7DF;
+}
+body.colletions h1,
+body.listview h1,
+body.colletions .h1,
+body.listview .h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+body.colletions h2,
+body.listview h2,
+body.colletions .h2,
+body.listview .h2 {
+  font-size: 1.75rem;
+  line-height: 1.42857;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+body.colletions h3,
+body.listview h3,
+body.colletions .h3,
+body.listview .h3 {
+  font-size: 1.5rem;
+  line-height: 1.16667;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+body.colletions h4,
+body.listview h4,
+body.colletions .has-subheadline + .subheadline,
+body.listview .has-subheadline + .subheadline,
+body.colletions .h4,
+body.listview .h4,
+body.colletions .h4,
+body.listview .h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+body.colletions h5,
+body.listview h5,
+body.colletions .h5,
+body.listview .h5 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+body.colletions h6,
+body.listview h6,
+body.colletions .h6,
+body.listview .h6 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+@media print, screen and (min-width: 64.0625em) {
+  body.colletions h1,
+  body.listview h1,
+  body.colletions .h1,
+  body.listview .h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  body.colletions h2,
+  body.listview h2,
+  body.colletions .h2,
+  body.listview .h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  body.colletions h3,
+  body.listview h3,
+  body.colletions .h3,
+  body.listview .h3 {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  body.colletions h4,
+  body.listview h4,
+  body.colletions .has-subheadline + .subheadline,
+  body.listview .has-subheadline + .subheadline,
+  body.colletions .h4,
+  body.listview .h4,
+  body.colletions .h4,
+  body.listview .h4 {
+    font-size: 1.625rem;
+    line-height: 1.23077;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  body.colletions h5,
+  body.listview h5,
+  body.colletions .h5,
+  body.listview .h5 {
+    font-size: 1.625rem;
+    line-height: 1.23077;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  body.colletions h6,
+  body.listview h6,
+  body.colletions .h6,
+  body.listview .h6 {
+    font-size: 1.625rem;
+    line-height: 1.23077;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+body.colletions a,
+body.listview a {
+  line-height: inherit;
+  color: #232E58;
+  text-decoration: none;
+  cursor: pointer;
+}
+body.colletions a:hover,
+body.listview a:hover,
+body.colletions a a:focus,
+body.listview a a:focus {
+  color: #1e284c;
+}
+body.colletions a img,
+body.listview a img {
+  border: 0;
+}
 body {
   min-height: 100vh;
   display: flex;
