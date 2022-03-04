@@ -11497,6 +11497,9 @@ div#footernav {
 span#copyright {
   margin-right: 53px;
 }
+.tx-dlf-metadata h1:before {
+  content: unset;
+}
 .content {
   position: relative;
   padding: 30px 0;
