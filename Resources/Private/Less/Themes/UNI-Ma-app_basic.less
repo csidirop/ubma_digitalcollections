@@ -1703,7 +1703,7 @@ h6, .h6 {
     line-height: 1.25;
     margin-top: 0;
     margin-bottom: 1.5rem; }
-  
+
   h4,
   .has-subheadline + .subheadline,
   .h4, .h4 {
@@ -1921,7 +1921,7 @@ ul.no-bullet, ol.no-bullet {
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-  
+
   p,
   html body input[type="submit"],
   h2,
@@ -5637,19 +5637,19 @@ html body input[type="submit"], .uma-global-content .news.news-single {
   line-height: 28px;
   font-size: calc(0.125vw + 15.6px); }
   @media print, screen and (min-width: 48em) {
-    
+
     p,
     html body input[type="submit"], .uma-global-content .news.news-single {
       font-size: 18px;
       line-height: 32px;
       margin-bottom: 18px; } }
   @media screen and (max-width: 47.9375em) {
-    
+
     p,
     html body input[type="submit"], .uma-global-content .news.news-single {
       font-size: 16px; } }
   @media screen and (min-width: 90.0625em) {
-    
+
     p,
     html body input[type="submit"], .uma-global-content .news.news-single {
       font-size: 18px; } }
@@ -5740,53 +5740,56 @@ a {
       margin-top: 12px;
       margin-bottom: 16px; }
 
-h1, .h1 {
-  position: relative;
-  padding-top: 1.3125rem;
-  color: #232E58;
-  text-align: left;
-  letter-spacing: 0.0625rem;
-  font-size: calc(1vw + 28.8px); }
-  h1::before, .h1::before {
-    content: '';
-    position: absolute;
-    width: 6.25rem;
-    height: 0.3125rem;
-    background-color: #232E58;
-    top: 0;
-    left: 50%;
-    margin-left: -3.125rem; }
-  @media screen and (max-width: 47.9375em) {
+body.collections {
     h1, .h1 {
-      font-size: 32px; } }
-  @media screen and (min-width: 90.0625em) {
-    h1, .h1 {
-      font-size: 48px; } }
-  @media print, screen and (min-width: 48em) {
-    h1, .h1 {
-      letter-spacing: 0.1875rem;
-      text-align: left; }
+      position: relative;
+      padding-top: 1.3125rem;
+      color: #232E58;
+      text-align: left;
+      letter-spacing: 0.0625rem;
+      font-size: calc(1vw + 28.8px); }
       h1::before, .h1::before {
         content: '';
-        width: 6.5625rem;
-        height: 0.5rem;
-        left: -32px;
-        margin: 0; } }
+        position: absolute;
+        width: 6.25rem;
+        height: 0.3125rem;
+        background-color: #232E58;
+        top: 0;
+        left: 50%;
+        margin-left: -3.125rem; }
+      @media screen and (max-width: 47.9375em) {
+        h1, .h1 {
+          font-size: 32px; } }
+      @media screen and (min-width: 90.0625em) {
+        h1, .h1 {
+          font-size: 48px; } }
+      @media print, screen and (min-width: 48em) {
+        h1, .h1 {
+          letter-spacing: 0.1875rem;
+          text-align: left; }
+          h1::before, .h1::before {
+            content: '';
+            width: 6.5625rem;
+            height: 0.5rem;
+            left: -32px;
+            margin: 0; } }
 
-h2, .h2 {
-  padding-top: 0;
-  letter-spacing: 0.0625rem;
-  font-size: calc(0.75vw + 25.6px); }
-  @media print, screen and (min-width: 48em) {
     h2, .h2 {
-      letter-spacing: 0.125rem; } }
-  @media screen and (max-width: 47.9375em) {
-    h2, .h2 {
-      font-size: 28px; } }
-  @media screen and (min-width: 90.0625em) {
-    h2, .h2 {
-      font-size: 40px; } }
-
+      padding-top: 0;
+      letter-spacing: 0.0625rem;
+      font-size: calc(0.75vw + 25.6px); }
+      @media print, screen and (min-width: 48em) {
+        h2, .h2 {
+          letter-spacing: 0.125rem; } }
+      @media screen and (max-width: 47.9375em) {
+        h2, .h2 {
+          font-size: 28px; } }
+      @media screen and (min-width: 90.0625em) {
+        h2, .h2 {
+          font-size: 40px;
+        }
+    }
+}
 h3, .h3 {
   padding-top: 0;
   letter-spacing: 0;
@@ -5814,7 +5817,7 @@ h6 {
   letter-spacing: 0;
   font-size: calc(0.375vw + 18.8px); }
   @media screen and (max-width: 47.9375em) {
-    
+
     h4,
     .has-subheadline + .subheadline,
     .h4,
@@ -5822,7 +5825,7 @@ h6 {
     h6 {
       font-size: 20px; } }
   @media screen and (min-width: 90.0625em) {
-    
+
     h4,
     .has-subheadline + .subheadline,
     .h4,
