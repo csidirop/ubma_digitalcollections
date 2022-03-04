@@ -31,7 +31,7 @@ config {
             title = Digitale Sammlungen
 
             # cat=plugin.tx_slubdigitalcollections/links/0302; type=string; label= Kitodo CSS-class
-            cssClass = dlf-slub-logo
+            cssClass = dlf-ubma-logo
         }
 
         # cat=plugin.tx_slubdigitalcollections/links/0320; type=int+; label= Dlf Storage Pid
