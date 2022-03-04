@@ -5740,56 +5740,55 @@ a {
       margin-top: 12px;
       margin-bottom: 16px; }
 
-body.collections {
+h1, .h1 {
+  position: relative;
+  padding-top: 1.3125rem;
+  color: #232E58;
+  text-align: left;
+  letter-spacing: 0.0625rem;
+  font-size: calc(1vw + 28.8px); }
+  h1::before, .h1::before {
+    content: '';
+    position: absolute;
+    width: 6.25rem;
+    height: 0.3125rem;
+    background-color: #232E58;
+    top: 0;
+    left: 50%;
+    margin-left: -3.125rem; }
+  @media screen and (max-width: 47.9375em) {
     h1, .h1 {
-      position: relative;
-      padding-top: 1.3125rem;
-      color: #232E58;
-      text-align: left;
-      letter-spacing: 0.0625rem;
-      font-size: calc(1vw + 28.8px); }
+      font-size: 32px; } }
+  @media screen and (min-width: 90.0625em) {
+    h1, .h1 {
+      font-size: 48px; } }
+  @media print, screen and (min-width: 48em) {
+    h1, .h1 {
+      letter-spacing: 0.1875rem;
+      text-align: left; }
       h1::before, .h1::before {
         content: '';
-        position: absolute;
-        width: 6.25rem;
-        height: 0.3125rem;
-        background-color: #232E58;
-        top: 0;
-        left: 50%;
-        margin-left: -3.125rem; }
-      @media screen and (max-width: 47.9375em) {
-        h1, .h1 {
-          font-size: 32px; } }
-      @media screen and (min-width: 90.0625em) {
-        h1, .h1 {
-          font-size: 48px; } }
-      @media print, screen and (min-width: 48em) {
-        h1, .h1 {
-          letter-spacing: 0.1875rem;
-          text-align: left; }
-          h1::before, .h1::before {
-            content: '';
-            width: 6.5625rem;
-            height: 0.5rem;
-            left: -32px;
-            margin: 0; } }
+        width: 6.5625rem;
+        height: 0.5rem;
+        left: -32px;
+        margin: 0; } }
 
+h2, .h2 {
+  padding-top: 0;
+  letter-spacing: 0.0625rem;
+  font-size: calc(0.75vw + 25.6px); }
+  @media print, screen and (min-width: 48em) {
     h2, .h2 {
-      padding-top: 0;
-      letter-spacing: 0.0625rem;
-      font-size: calc(0.75vw + 25.6px); }
-      @media print, screen and (min-width: 48em) {
-        h2, .h2 {
-          letter-spacing: 0.125rem; } }
-      @media screen and (max-width: 47.9375em) {
-        h2, .h2 {
-          font-size: 28px; } }
-      @media screen and (min-width: 90.0625em) {
-        h2, .h2 {
-          font-size: 40px;
-        }
+      letter-spacing: 0.125rem; } }
+  @media screen and (max-width: 47.9375em) {
+    h2, .h2 {
+      font-size: 28px; } }
+  @media screen and (min-width: 90.0625em) {
+    h2, .h2 {
+      font-size: 40px;
     }
 }
+
 h3, .h3 {
   padding-top: 0;
   letter-spacing: 0;

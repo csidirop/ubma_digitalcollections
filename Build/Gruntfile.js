@@ -7,8 +7,8 @@ module.exports = function(grunt) {
             development: {
                 options: {
                     sourceMap: true,
-                    compress: true,
-                    yuicompress: true,
+                    compress: false,
+                    yuicompress: false,
                     optimization: 2
                 },
                 files: {
