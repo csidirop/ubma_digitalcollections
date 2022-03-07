@@ -21,6 +21,22 @@ html {
   // 3
 }
 
+// mixin für unterstrichene Anker
+.uni-a() {
+    a {
+        color: #232E58;
+        border-bottom: 0.1875rem solid #d1d7df;
+
+        &:hover {
+            color: #455d82;
+            border-color: #abb8ca;
+        }
+    }
+}
+
+
+
+
 body.collections,
 body.listview {
     h1, .h1,
@@ -165,8 +181,54 @@ body.listview {
             border: 0;
         }
     }
+    // unterstrichene a
+    .uni-a();
 }
 
+body {
+    .document-functions {
+        & > ul {
+            & > li.submenu {
+                & > ul {
+                    background-color: @uma-dark-blue-transparent;
+                }
+            }
+
+            li.submenu {
+                &:focus-within:before {
+                    border-bottom-color: @uma-dark-blue-transparent;
+                }
+		&.open {
+                    &:before {
+                        border-bottom-color: @uma-dark-blue-transparent;
+                    }
+                }
+            }
+        }
+    }
+    .control-bar .header-bar nav .secondary-nav {
+        background-color: @uma-dark-blue-transparent;
+        
+        &:before {
+            border-right-color: @uma-dark-blue-transparent;
+        }
+    }
+    .tx-dlf-toc {
+        ul.toc {
+            ul {
+                li {
+                    &.current,
+                    &:nth-child(even) {
+                        //background: @uma-medium-blue;
+                    }
+                }
+            }
+        }
+    }
+    .tx-dlf-metadata {
+       .uni-a();
+    }
+}
 
 
 // Ende aus Uni
@@ -215,5 +277,4 @@ aside.sidebar {
             font-weight: bold;
         }
     }
-
 }
