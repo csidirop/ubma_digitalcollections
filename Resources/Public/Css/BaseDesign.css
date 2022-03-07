@@ -289,6 +289,24 @@ body.listview .h6 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+body.collections h1,
+body.listview h1,
+body.collections .h1,
+body.listview .h1 {
+  padding-top: 1.3125rem;
+}
+body.collections h1:before,
+body.listview h1:before,
+body.collections .h1:before,
+body.listview .h1:before {
+  content: '';
+  position: absolute;
+  width: 6.5625rem;
+  height: 0.5rem;
+  background-color: #232E58;
+  top: 0;
+  left: -32px;
+}
 @media print, screen and (min-width: 64.0625em) {
   body.collections h1,
   body.listview h1,

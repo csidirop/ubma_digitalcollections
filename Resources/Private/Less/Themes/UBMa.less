@@ -94,6 +94,22 @@ body.listview {
       margin-bottom: 1rem;
     }
 
+    h1,
+    .h1 {
+        padding-top: 1.3125rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 6.5625rem;
+            height: 0.5rem;
+            background-color: #232E58;
+            top: 0;
+            left: -32px;
+        }
+    }
+
+
     @media print, screen and (min-width: 64.0625em) {
         h1, .h1 {
             font-size: 3rem;
