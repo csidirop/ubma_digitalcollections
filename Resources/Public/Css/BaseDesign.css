@@ -411,6 +411,10 @@ span#copyright {
 .tx-dlf-listview label:nth-of-type(2) {
   padding-left: 10px;
 }
+aside.sidebar .tx-dlf-enable-offcanvas h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
 .content {
   position: relative;
   padding: 30px 0;
