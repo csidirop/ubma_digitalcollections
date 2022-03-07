@@ -384,6 +384,39 @@ body.collections a img,
 body.listview a img {
   border: 0;
 }
+body.collections a,
+body.listview a {
+  color: #232E58;
+  border-bottom: 0.1875rem solid #d1d7df;
+}
+body.collections a:hover,
+body.listview a:hover {
+  color: #455d82;
+  border-color: #abb8ca;
+}
+body .document-functions > ul > li.submenu > ul {
+  background-color: rgba(35, 46, 88, 0.97);
+}
+body .document-functions > ul li.submenu:focus-within:before {
+  border-bottom-color: rgba(35, 46, 88, 0.97);
+}
+body .document-functions > ul li.submenu.open:before {
+  border-bottom-color: rgba(35, 46, 88, 0.97);
+}
+body .control-bar .header-bar nav .secondary-nav {
+  background-color: rgba(35, 46, 88, 0.97);
+}
+body .control-bar .header-bar nav .secondary-nav:before {
+  border-right-color: rgba(35, 46, 88, 0.97);
+}
+body .tx-dlf-metadata a {
+  color: #232E58;
+  border-bottom: 0.1875rem solid #d1d7df;
+}
+body .tx-dlf-metadata a:hover {
+  color: #455d82;
+  border-color: #abb8ca;
+}
 body {
   min-height: 100vh;
   display: flex;
