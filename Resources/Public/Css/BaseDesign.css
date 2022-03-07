@@ -417,6 +417,12 @@ body .tx-dlf-metadata a:hover {
   color: #455d82;
   border-color: #abb8ca;
 }
+body .view-functions .image-manipulation .slider-container {
+  background: rgba(35, 46, 88, 0.97);
+}
+body .view-functions .image-manipulation .slider-container:before {
+  border-bottom-color: rgba(35, 46, 88, 0.97);
+}
 body {
   min-height: 100vh;
   display: flex;
