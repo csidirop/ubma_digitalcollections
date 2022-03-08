@@ -145,7 +145,7 @@ plugin.tx_dlf_tableofcontents {
                         append.wrap = &nbsp;|
                     }
                     # show metadata type in front of menu item "Illustrierte Magazine"-Style
-                    dataWrap = <span class="title"><span class="meta-type-icon meta-type-{field:type}">{field:type}</span> | </span> <span class="pagination">{field:pagination}</span>
+                    dataWrap = <span class="meta-type-icon meta-type-{field:type}">{field:type}</span><span class="title"> | </span> <span class="pagination">{field:pagination}</span>
 
                     # do not show metadata type
                     # dataWrap = <span class="tx-dlf-toc-title">|</span> <span class="tx-dlf-toc-pagination">{field:pagination}</span>
