@@ -398,11 +398,19 @@ body.collections div.main-column .tx-dlf-collection .tx-dlf-collection-list .tx-
 body.listview div.main-column .tx-dlf-collection .tx-dlf-collection-list .tx-dlf-collection-col .tx-dlf-collection-item .tx-dlf-collection-meta-information h4 a {
   color: #232E58;
 }
+body.collections div.main-column .search-form .tx-dlf-search form #tx-dlf-search-suggest:after,
+body.listview div.main-column .search-form .tx-dlf-search form #tx-dlf-search-suggest:after {
+  display: none;
+}
 body.collections aside.sidebar .tx-dlf-search-facets ul li ul li a,
 body.listview aside.sidebar .tx-dlf-search-facets ul li ul li a {
   color: #232E58;
   padding-bottom: 0;
   margin-bottom: 5px;
+}
+body.collections .ui-helper-hidden-accessible,
+body.listview .ui-helper-hidden-accessible {
+  display: none;
 }
 body .document-functions > ul > li.submenu > ul {
   background-color: rgba(35, 46, 88, 0.97);

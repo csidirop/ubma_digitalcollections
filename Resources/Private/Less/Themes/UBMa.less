@@ -184,11 +184,25 @@ body.listview {
     // unterstrichene a
     .uni-a();
 
-    div.main-column .tx-dlf-collection {
-        .tx-dlf-collection-list .tx-dlf-collection-col {
-            .tx-dlf-collection-item .tx-dlf-collection-meta-information {
-                h4 a {
-                    color: @uma-dark-blue;
+    div.main-column {
+        .tx-dlf-collection {
+            .tx-dlf-collection-list .tx-dlf-collection-col {
+                .tx-dlf-collection-item .tx-dlf-collection-meta-information {
+                    h4 a {
+                        color: @uma-dark-blue;
+                    }
+                }
+            }
+        }
+        .search-form {
+            .tx-dlf-search {
+                form {
+                    #tx-dlf-search-suggest {
+                        &:after {
+                            //background-color: hotpink;
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -205,6 +219,9 @@ body.listview {
         }
     }
 
+    .ui-helper-hidden-accessible {
+         display: none;
+    }
 
 }
 
