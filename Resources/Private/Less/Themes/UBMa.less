@@ -183,6 +183,29 @@ body.listview {
     }
     // unterstrichene a
     .uni-a();
+
+    div.main-column .tx-dlf-collection {
+        .tx-dlf-collection-list .tx-dlf-collection-col {
+            .tx-dlf-collection-item .tx-dlf-collection-meta-information {
+                h4 a {
+                    color: @uma-dark-blue;
+                }
+            }
+        }
+    }
+
+
+    aside.sidebar {
+        .tx-dlf-search-facets {
+           ul li ul li a {
+               color: @uma-dark-blue;
+               padding-bottom: 0;
+               margin-bottom: 5px;
+           }
+        }
+    }
+
+
 }
 
 body {
@@ -224,9 +247,27 @@ body {
                 }
             }
         }
+        .tx-dlf-wincontent > ul.toc > li > a span.title {
+           color: #232E58;
+           border-bottom: 0.1875rem solid #d1d7df;
+
+           &:hover {
+              color: #455d82;
+              border-color: #abb8ca;
+           }
+           span.meta-type-icon { 
+              border-bottom: none;
+           }
+        }
     }
     .tx-dlf-metadata {
        .uni-a();
+
+       dl {
+          dt {
+             color: @uma-dark-gray;
+          }
+       }
     }
 
     .view-functions {
@@ -238,6 +279,36 @@ body {
                     border-bottom-color: @uma-dark-blue-transparent;
                 }
             }
+        }
+        ul {
+            li.pages {
+                form {
+                    select {
+                        border-color: @uma-dark-blue;
+                        color: @uma-dark-blue;
+                    }
+                }
+            }
+        }
+    }
+    .tx-dlf-toolsFulltextsearch {
+	.fulltext-search-toggle {
+            &:after {
+                color: @uma-dark-blue;
+            }
+        }
+        form {
+            background: @uma-dark-blue-transparent;
+
+            &:before  {
+                border-bottom-color: @uma-dark-blue-transparent;
+            }
+            input[type="text"] {
+                color: @uma-dark-blue;
+            }
+        }
+        #tx-dlf-search-in-document-results {
+            background: @uma-dark-blue-transparent;
         }
     }
 }

@@ -394,6 +394,16 @@ body.listview a:hover {
   color: #455d82;
   border-color: #abb8ca;
 }
+body.collections div.main-column .tx-dlf-collection .tx-dlf-collection-list .tx-dlf-collection-col .tx-dlf-collection-item .tx-dlf-collection-meta-information h4 a,
+body.listview div.main-column .tx-dlf-collection .tx-dlf-collection-list .tx-dlf-collection-col .tx-dlf-collection-item .tx-dlf-collection-meta-information h4 a {
+  color: #232E58;
+}
+body.collections aside.sidebar .tx-dlf-search-facets ul li ul li a,
+body.listview aside.sidebar .tx-dlf-search-facets ul li ul li a {
+  color: #232E58;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
 body .document-functions > ul > li.submenu > ul {
   background-color: rgba(35, 46, 88, 0.97);
 }
@@ -409,6 +419,17 @@ body .control-bar .header-bar nav .secondary-nav {
 body .control-bar .header-bar nav .secondary-nav:before {
   border-right-color: rgba(35, 46, 88, 0.97);
 }
+body .tx-dlf-toc .tx-dlf-wincontent > ul.toc > li > a span.title {
+  color: #232E58;
+  border-bottom: 0.1875rem solid #d1d7df;
+}
+body .tx-dlf-toc .tx-dlf-wincontent > ul.toc > li > a span.title:hover {
+  color: #455d82;
+  border-color: #abb8ca;
+}
+body .tx-dlf-toc .tx-dlf-wincontent > ul.toc > li > a span.title span.meta-type-icon {
+  border-bottom: none;
+}
 body .tx-dlf-metadata a {
   color: #232E58;
   border-bottom: 0.1875rem solid #d1d7df;
@@ -417,11 +438,33 @@ body .tx-dlf-metadata a:hover {
   color: #455d82;
   border-color: #abb8ca;
 }
+body .tx-dlf-metadata dl dt {
+  color: #808080;
+}
 body .view-functions .image-manipulation .slider-container {
   background: rgba(35, 46, 88, 0.97);
 }
 body .view-functions .image-manipulation .slider-container:before {
   border-bottom-color: rgba(35, 46, 88, 0.97);
+}
+body .view-functions ul li.pages form select {
+  border-color: #232E58;
+  color: #232E58;
+}
+body .tx-dlf-toolsFulltextsearch .fulltext-search-toggle:after {
+  color: #232E58;
+}
+body .tx-dlf-toolsFulltextsearch form {
+  background: rgba(35, 46, 88, 0.97);
+}
+body .tx-dlf-toolsFulltextsearch form:before {
+  border-bottom-color: rgba(35, 46, 88, 0.97);
+}
+body .tx-dlf-toolsFulltextsearch form input[type="text"] {
+  color: #232E58;
+}
+body .tx-dlf-toolsFulltextsearch #tx-dlf-search-in-document-results {
+  background: rgba(35, 46, 88, 0.97);
 }
 body {
   min-height: 100vh;
