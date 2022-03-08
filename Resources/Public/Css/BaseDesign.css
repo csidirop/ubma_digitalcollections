@@ -407,11 +407,28 @@ body.listview aside.sidebar .tx-dlf-search-facets ul li ul li a {
 body .document-functions > ul > li.submenu > ul {
   background-color: rgba(35, 46, 88, 0.97);
 }
-body .document-functions > ul li.submenu:focus-within:before {
+body .document-functions > ul li.submenu.open:focus-within:before {
+  display: inherit;
   border-bottom-color: rgba(35, 46, 88, 0.97);
 }
-body .document-functions > ul li.submenu.open:before {
+body .document-functions > ul li.submenu.open.open:before {
+  display: inherit;
   border-bottom-color: rgba(35, 46, 88, 0.97);
+}
+body .document-functions > ul li.submenu:focus-within:before {
+  display: none;
+}
+body .document-functions > ul li.submenu:before {
+  display: none;
+}
+body .document-view .document-functions.missing-provider-image ul li.submenu.downloads.open ul,
+body .document-view .document-functions.missing-provider-image ul li.submenu.links.open ul {
+  display: inherit;
+  left: 10px;
+}
+body .document-view .document-functions.missing-provider-image ul li.submenu.downloads ul,
+body .document-view .document-functions.missing-provider-image ul li.submenu.links ul {
+  display: none;
 }
 body .control-bar .header-bar nav .secondary-nav {
   background-color: rgba(35, 46, 88, 0.97);

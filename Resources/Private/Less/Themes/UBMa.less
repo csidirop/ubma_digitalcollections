@@ -218,17 +218,56 @@ body {
             }
 
             li.submenu {
-                &:focus-within:before {
-                    border-bottom-color: @uma-dark-blue-transparent;
-                }
-		&.open {
-                    &:before {
+                &.open {
+                    &:focus-within:before {
+                        display: inherit;
                         border-bottom-color: @uma-dark-blue-transparent;
+                    }
+                    &.open {
+                        &:before {
+                             display: inherit;
+                             border-bottom-color: @uma-dark-blue-transparent;
+                        }
+                    }
+                }
+                & {
+                    &:focus-within:before {
+                        display: none;
+                    }
+                    &:before {
+                        display: none;
                     }
                 }
             }
         }
     }
+//   
+    .document-view {
+        .document-functions {
+            &.missing-provider-image {
+                ul {
+                    li {
+                        &.submenu {
+                            &.downloads.open,
+                            &.links.open {
+                                ul {
+                                    display: inherit;
+                                    left: 10px;
+                                }
+                            }
+                            &.downloads,
+                            &.links {
+                                ul {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .control-bar .header-bar nav .secondary-nav {
         background-color: @uma-dark-blue-transparent;
         
