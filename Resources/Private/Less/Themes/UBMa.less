@@ -24,12 +24,12 @@ html {
 // mixin für unterstrichene Anker
 .uni-a() {
     a {
-        color: #232E58;
+        color: @uma-dark-blue;
         border-bottom: 0.1875rem solid #d1d7df;
 
         &:hover {
-            color: #455d82;
-            border-color: #abb8ca;
+            color: @uma-medium-blue;
+            border-color: @uma-light-blue;
         }
     }
 }
@@ -62,7 +62,7 @@ body.listview {
     h5 small, .h5 small,
     h6 small, .h6 small {
         line-height: 0;
-        color: #D1D7DF;
+        color: @uma-medium-gray;
     }
 
     h1, .h1 {
@@ -119,7 +119,7 @@ body.listview {
             position: absolute;
             width: 6.5625rem;
             height: 0.5rem;
-            background-color: #232E58;
+            background-color: @uma-dark-blue;
             top: 0;
             left: -32px;
         }
@@ -170,7 +170,7 @@ body.listview {
 
     a {
         line-height: inherit;
-        color: #232E58;
+        color: @uma-dark-blue;
         text-decoration: none;
         cursor: pointer;
 
@@ -304,12 +304,12 @@ body {
             }
         }
         .tx-dlf-wincontent > ul.toc > li > a span.title {
-           color: #232E58;
+           color: @uma-dark-blue;
            border-bottom: 0.1875rem solid #d1d7df;
 
            &:hover {
-              color: #455d82;
-              border-color: #abb8ca;
+              color: @uma-medium-blue;
+              border-color: @uma-light-blue;
            }
            span.meta-type-icon { 
               border-bottom: none;
