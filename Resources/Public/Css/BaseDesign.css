@@ -424,6 +424,12 @@ body.collections .ui-helper-hidden-accessible,
 body.listview .ui-helper-hidden-accessible {
   display: none;
 }
+@media (max-width: 1023px) {
+  body.collections aside.sidebar .tx-dlf-search-facets ul li ul li a,
+  body.listview aside.sidebar .tx-dlf-search-facets ul li ul li a {
+    color: #fff;
+  }
+}
 body .document-functions > ul > li.submenu > ul {
   background-color: rgba(35, 46, 88, 0.97);
 }
@@ -516,6 +522,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  z-index: 1000;
 }
 div#footernav {
   float: left;

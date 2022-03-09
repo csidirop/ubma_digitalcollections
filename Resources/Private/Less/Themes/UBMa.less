@@ -214,8 +214,6 @@ body.listview {
             }
         }
     }
-
-
     aside.sidebar {
         .tx-dlf-search-facets {
            ul li ul li a {
@@ -229,7 +227,20 @@ body.listview {
     .ui-helper-hidden-accessible {
          display: none;
     }
+}
 
+@media (max-width: 1023px) {
+
+    body.collections,
+    body.listview {
+        aside.sidebar {
+            .tx-dlf-search-facets {
+                ul li ul li a {
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 body {
@@ -392,6 +403,8 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    // in collectionlist alph. icons behind footer
+    z-index: 1000;
 }
 div#footernav {
     float: left;
