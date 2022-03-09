@@ -392,6 +392,10 @@ body.listview a:hover {
   color: #455D82;
   border-color: #ABB8CA;
 }
+body.collections .tx-dlf-collection-thumbnail a,
+body.listview .tx-dlf-collection-thumbnail a {
+  border-bottom: none;
+}
 body.collections div.main-column .tx-dlf-collection .tx-dlf-collection-list .tx-dlf-collection-col .tx-dlf-collection-item .tx-dlf-collection-meta-information h4 a,
 body.listview div.main-column .tx-dlf-collection .tx-dlf-collection-list .tx-dlf-collection-col .tx-dlf-collection-item .tx-dlf-collection-meta-information h4 a {
   color: #232e58;
