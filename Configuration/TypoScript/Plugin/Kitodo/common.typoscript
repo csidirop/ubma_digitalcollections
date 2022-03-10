@@ -8,6 +8,8 @@ page {
   includeCSS {
         kitodo = {$config.kitodo.css.lists}
         kitodo.media = screen,projection
+        kitodo.disableCompression = 1
+        kitodo.excludeFromConcatenation = 1
     }
     # we need jquery in head as it is used by pageview plugin
     # --> jQuery must be provided by Kitodo.Presentation --> include Template "Basis Configuration"
@@ -21,6 +23,8 @@ page {
 
     # switch to viewer css
     page.includeCSS.kitodo = {$config.kitodo.css.pageview}
+    page.includeCSS.kitodo.disableCompression = 1
+    page.includeCSS.kitodo.excludeFromConcatenation = 1
 
     # switch to viewer js
     page.includeJSFooterlibs.kitodo = EXT:slub_digitalcollections/Resources/Public/JavaScript/DigitalcollectionsScripts.js
