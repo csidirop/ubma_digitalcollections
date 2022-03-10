@@ -27,7 +27,36 @@
                 </div>
                 <div class="offcanvas-toggle"></div>
             </div>
+            
+        <f:comment> add class if newspaper </f:comment>    
+        <f:if condition="{isNewspaper} == 'newspaper_anchor'">
+          <f:then>
+            <div class="toc-wrapper toc-newspaper-anchor">
+              
+          </f:then>
+          <f:else>
+            <f:if condition="{isNewspaper} == 'newspaper_year'">
+              <f:then>
+            <div class="toc-wrapper toc-newspaper-year">
+                 
+              </f:then>
+              <f:else>
+                <f:if condition="{isNewspaper} == 'newspaper_issue'">
+                  <f:then>
+            <div class="toc-wrapper toc-newspaper">
+                    
+                  </f:then>
+                  <f:else>
             <div class="toc-wrapper">
+                    
+                  </f:else>
+                </f:if>
+              </f:else>
+            </f:if>
+          </f:else>
+        </f:if>
+          
+                      
                 <f:cObject typoscriptObjectPath="plugin.tx_dlf_tableofcontents" />
                 <div class="offcanvas-toggle"></div>
             </div>
