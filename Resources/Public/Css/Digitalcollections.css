@@ -3869,6 +3869,16 @@ body .tx-dlf-toolsFulltextsearch form input[type="text"] {
 body .tx-dlf-toolsFulltextsearch #tx-dlf-search-in-document-results {
   background: rgba(35, 46, 88, 0.97);
 }
+body .toc-wrapper.toc-newspaper .tx-dlf-toc ul.toc li.submenu span.meta-type-Tag,
+body .toc-wrapper.toc-newspaper .tx-dlf-toc ul.toc li.submenu span.meta-type-Monat {
+  background-color: hotpink;
+  display: none;
+}
+body .toc-wrapper.toc-newspaper .tx-dlf-toc ul.toc li.submenu span.meta-type-Tag + span.title,
+body .toc-wrapper.toc-newspaper .tx-dlf-toc ul.toc li.submenu span.meta-type-Monat + span.title {
+  background-color: yellow;
+  display: none;
+}
 body {
   min-height: 100vh;
   display: flex;

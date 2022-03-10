@@ -385,6 +385,26 @@ body {
             background: @uma-dark-blue-transparent;
         }
     }
+
+    // toc newspapers
+    .toc-wrapper.toc-newspaper {
+        .tx-dlf-toc {
+            ul.toc {
+                li.submenu {
+                    span.meta-type-Tag,
+                    span.meta-type-Monat {
+                        background-color: hotpink;
+                        display: none;
+
+                        & + span.title {
+                            background-color: yellow;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
