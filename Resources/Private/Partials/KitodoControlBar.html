@@ -18,45 +18,171 @@
             </nav>
         </div>
         <div class="ctrldata-container">
-            <div class="metadata-wrapper">
-                <div class="tx-dlf-metadata">
-                    <f:if condition="{docTitle}">
-                        <h1>{docTitle}</h1>
-                    </f:if>
-                    <f:cObject typoscriptObjectPath="plugin.tx_dlf_metadata" />
-                </div>
-                <div class="offcanvas-toggle"></div>
-            </div>
-            
-        <f:comment> add class if newspaper </f:comment>    
+
+        <f:comment>
+            =========================
+                 metadata-wrapper
+            =========================
+        </f:comment>
+        <f:comment> add class if newspaper </f:comment>
         <f:if condition="{isNewspaper} == 'newspaper_anchor'">
           <f:then>
-            <div class="toc-wrapper toc-newspaper-anchor">
-              
+            <div class="metadata-wrapper metadata-newspaper-anchor">
+
           </f:then>
           <f:else>
             <f:if condition="{isNewspaper} == 'newspaper_year'">
               <f:then>
-            <div class="toc-wrapper toc-newspaper-year">
-                 
+            <div class="metadata-wrapper metadata-newspaper-year">
+
               </f:then>
               <f:else>
                 <f:if condition="{isNewspaper} == 'newspaper_issue'">
                   <f:then>
-            <div class="toc-wrapper toc-newspaper">
-                    
+            <div class="metadata-wrapper metadata-newspaper">
+
                   </f:then>
                   <f:else>
-            <div class="toc-wrapper">
-                    
+            <div class="metadata-wrapper">
+
                   </f:else>
                 </f:if>
               </f:else>
             </f:if>
           </f:else>
         </f:if>
-          
-                      
+
+
+                <f:comment>
+                    =========================
+                         h1
+                    =========================
+                </f:comment>
+
+                <div class="tx-dlf-metadata">
+                    <f:comment>Original Version
+                    <f:if condition="{docTitleParts}">
+                        <h1><f:format.raw>{docTitle}</f:format.raw></h1>
+                    </f:if>
+                    </f:comment>
+
+                    <f:comment>---------------------------------------------------</f:comment>
+                    <f:comment>    H1 for newspaper and subparts                  </f:comment>
+                    <f:comment>---------------------------------------------------</f:comment>
+                    <f:if condition="{isNewspaper} == 'newspaper_anchor'">
+                      <f:then>
+
+                        <f:comment>-------------------------------</f:comment>
+                        <f:comment> Anchor </f:comment>
+                        <f:comment> all empty? C {docTitle-currentTitle} P {docTitle-PartsOfTitle} PP{docTitle-PartsOfPartsTitle} </f:comment>
+                        <f:if condition="{docTitle-currentTitle}">
+                            <f:then>
+                                <h1>{docTitle-currentTitle} {docTitle-PartsOfTitle} {docTitle-PartsOfPartsTitle}</h1>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{docTitle}">
+                                    <h1>{docTitle}</h1>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+
+                      </f:then>
+                      <f:else>
+                        <f:if condition="{isNewspaper} == 'newspaper_year'">
+                          <f:then>
+
+                            <f:comment>-------------------------------</f:comment>
+                            <f:comment> Year </f:comment>
+                            <f:comment> emtpy {docTitle-PartsOfPartsTitle}</f:comment>
+                            <f:if condition="{docTitle-currentTitle}">
+                                <f:then>
+                                    <h1 class="year">{docTitle-PartsOfTitle}: {docTitle-currentTitle}</h1>
+                                </f:then>
+                                <f:else>
+                                    <f:if condition="{docTitle}">
+                                        <h1>{docTitle}</h1>
+                                    </f:if>
+                                </f:else>
+                            </f:if>
+
+                          </f:then>
+                          <f:else>
+                            <f:if condition="{isNewspaper} == 'newspaper_issue'">
+                              <f:then>
+
+                                <f:comment>-------------------------------</f:comment>
+                                <f:comment> Issue </f:comment>
+                                <f:comment> empty {docTitle-PartsOfTitle} </f:comment>
+                                <f:if condition="{docTitle-currentTitle}">
+                                    <f:then>
+                                        <h1 class="issue">{docTitle-PartsOfPartsTitle}: {docTitle-currentTitle}</h1>
+                                    </f:then>
+                                    <f:else>
+                                        <f:if condition="{docTitle}">
+                                            <h1>{docTitle}</h1>
+                                        </f:if>
+                                    </f:else>
+                                </f:if>
+
+                              </f:then>
+                              <f:else>
+
+                                <f:comment>-------------------------------</f:comment>
+                                <f:comment> Normal </f:comment>
+                                <f:if condition="{docTitle-currentTitle}">
+                                    <h1>{docTitle}</h1>
+                                </f:if>
+
+                              </f:else>
+                            </f:if>
+                          </f:else>
+                        </f:if>
+                      </f:else>
+                    </f:if>
+                    <f:comment>---------------------------------------------------</f:comment>
+                    <f:comment>    End H1 for newspaper and subparts              </f:comment>
+                    <f:comment>---------------------------------------------------</f:comment>
+
+                    <f:cObject typoscriptObjectPath="plugin.tx_dlf_metadata" />
+                </div>
+                <div class="offcanvas-toggle"></div>
+            </div>
+
+        <f:comment>
+            =========================
+                 toc-wrapper
+            =========================
+        </f:comment>
+
+        <f:comment> add class if newspaper </f:comment>
+        <f:if condition="{isNewspaper} == 'newspaper_anchor'">
+          <f:then>
+            <div class="toc-wrapper toc-newspaper-anchor">
+
+          </f:then>
+          <f:else>
+            <f:if condition="{isNewspaper} == 'newspaper_year'">
+              <f:then>
+            <div class="toc-wrapper toc-newspaper-year">
+
+              </f:then>
+              <f:else>
+                <f:if condition="{isNewspaper} == 'newspaper_issue'">
+                  <f:then>
+            <div class="toc-wrapper toc-newspaper">
+
+                  </f:then>
+                  <f:else>
+            <div class="toc-wrapper">
+
+                  </f:else>
+                </f:if>
+              </f:else>
+            </f:if>
+          </f:else>
+        </f:if>
+
+
                 <f:cObject typoscriptObjectPath="plugin.tx_dlf_tableofcontents" />
                 <div class="offcanvas-toggle"></div>
             </div>
