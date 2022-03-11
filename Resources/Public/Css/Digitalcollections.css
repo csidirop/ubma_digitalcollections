@@ -3844,6 +3844,53 @@ body .tx-dlf-metadata a:hover {
 body .tx-dlf-metadata dl dt {
   color: #808080;
 }
+body .tx-dlf-metadata dl dd.tx-dlf-metadata-type {
+  color: #808080;
+}
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dt.tx-dlf-kitodo-id,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dt.tx-dlf-metadata-year,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dt.meta_dfgviewer_key,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dt.meta_dfgviewer_value,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dt.tx-dlf-metadata-erscheinungsdatum-year {
+  display: none;
+}
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dd.tx-dlf-kitodo-id,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dd.tx-dlf-metadata-year,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dd.meta_dfgviewer_key,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dd.meta_dfgviewer_value,
+body .metadata-wrapper.metadata-newspaper .tx-dlf-metadata dl dd.tx-dlf-metadata-erscheinungsdatum-year {
+  display: none;
+}
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dt.tx-dlf-kitodo-id,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dt.tx-dlf-metadata-year,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dt.meta_dfgviewer_key,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dt.meta_dfgviewer_value,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dt.tx-dlf-metadata-erscheinungsdatum-year {
+  display: none;
+}
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dd.tx-dlf-kitodo-id,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dd.tx-dlf-metadata-year,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dd.meta_dfgviewer_key,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dd.meta_dfgviewer_value,
+body .metadata-wrapper.metadata-newspaper-anchor .tx-dlf-metadata dl dd.tx-dlf-metadata-erscheinungsdatum-year {
+  display: none;
+}
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dt.tx-dlf-metadata-title,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dt.tx-dlf-kitodo-id,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dt.tx-dlf-metadata-year,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dt.meta_dfgviewer_key,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dt.meta_dfgviewer_value,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dt.tx-dlf-metadata-erscheinungsdatum-year {
+  display: none;
+}
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dd.tx-dlf-metadata-title,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dd.tx-dlf-kitodo-id,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dd.tx-dlf-metadata-year,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dd.meta_dfgviewer_key,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dd.meta_dfgviewer_value,
+body .metadata-wrapper.metadata-newspaper-year .tx-dlf-metadata dl dd.tx-dlf-metadata-erscheinungsdatum-year {
+  display: none;
+}
 body .view-functions .image-manipulation .slider-container {
   background: rgba(35, 46, 88, 0.97);
 }

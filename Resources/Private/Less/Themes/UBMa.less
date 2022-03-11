@@ -243,6 +243,40 @@ body.listview {
     }
 }
 
+// mixin
+.hide-in-newspaper() {
+    &.tx-dlf-kitodo-id,
+    &.tx-dlf-metadata-year,
+    &.meta_dfgviewer_key,
+    &.meta_dfgviewer_value,
+    &.tx-dlf-metadata-erscheinungsdatum-year {
+        display: none;
+    }
+}
+
+.hide-in-newspaper-anchor() {
+    // &.tx-dlf-metadata-title,
+    &.tx-dlf-kitodo-id,
+    &.tx-dlf-metadata-year,
+    &.meta_dfgviewer_key,
+    &.meta_dfgviewer_value,
+    &.tx-dlf-metadata-erscheinungsdatum-year {
+        display: none;
+    }
+}
+
+.hide-in-newspaper-calender() {
+    &.tx-dlf-metadata-title,
+    &.tx-dlf-kitodo-id,
+    &.tx-dlf-metadata-year,
+    &.meta_dfgviewer_key,
+    &.meta_dfgviewer_value,
+    &.tx-dlf-metadata-erscheinungsdatum-year {
+        display: none;
+    }
+}
+
+
 body {
     .document-functions {
         & > ul {
@@ -276,7 +310,7 @@ body {
             }
         }
     }
-//   
+//
     .document-view {
         .document-functions {
             &.missing-provider-image {
@@ -305,7 +339,7 @@ body {
 
     .control-bar .header-bar nav .secondary-nav {
         background-color: @uma-dark-blue-transparent;
-        
+
         &:before {
             border-right-color: @uma-dark-blue-transparent;
         }
@@ -329,20 +363,86 @@ body {
               color: @uma-medium-blue;
               border-color: @uma-light-blue;
            }
-           span.meta-type-icon { 
+           span.meta-type-icon {
               border-bottom: none;
            }
         }
     }
+    // -------------------------------------------
+    // Metadatenbereich
+    // -------------------------------------------
     .tx-dlf-metadata {
        .uni-a();
 
-       dl {
-          dt {
-             color: @uma-dark-gray;
-          }
-       }
+        // Feldbezeichner weniger intensiv wie Feldinhalte
+        dl {
+            dt {
+                color: @uma-dark-gray;
+            }
+            dd {
+                // erste Zeile Type beide Werte grau
+                &.tx-dlf-metadata-type {
+                    color: @uma-dark-gray;
+                }
+            }
+        }
     }
+
+    .metadata-wrapper {
+        // if newspaper view
+        &.metadata-newspaper {
+
+            .tx-dlf-metadata {
+
+                // Feldbezeichner weniger intensiv wie Feldinhalte
+                dl {
+                    dt {
+                        .hide-in-newspaper();
+                    }
+                    dd {
+                        .hide-in-newspaper();
+                    }
+                }
+            }
+        }
+
+        // if newspaper year overview
+        &.metadata-newspaper-anchor {
+
+            .tx-dlf-metadata {
+
+                // Feldbezeichner weniger intensiv wie Feldinhalte
+                dl {
+                    dt {
+                        .hide-in-newspaper-anchor();
+                    }
+                    dd {
+                        .hide-in-newspaper-anchor();
+                    }
+                }
+            }
+        }
+
+        // if newspaper calender
+        &.metadata-newspaper-year {
+
+            .tx-dlf-metadata {
+
+                // Feldbezeichner weniger intensiv wie Feldinhalte
+                dl {
+                    dt {
+                        .hide-in-newspaper-calender();
+                    }
+                    dd {
+                        .hide-in-newspaper-calender();
+                    }
+                }
+            }
+        }
+
+
+    }
+
 
     .view-functions {
         .image-manipulation {
