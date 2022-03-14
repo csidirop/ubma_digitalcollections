@@ -1,5 +1,5 @@
 <?php
-namespace Slub\SlubDigitalcollections\ViewHelpers;
+namespace Ubma\UbmaDigitalcollections\ViewHelpers;
 
 /***************************************************************
  *  Copyright notice
@@ -66,7 +66,7 @@ class DownloadLinksViewHelper extends AbstractViewHelper
         $type = $arguments['type'];
         $pagenumber = $arguments['pagenumber'];
 
-        $doc = GeneralUtility::makeInstance(\Slub\SlubDigitalcollections\Helpers\GetDoc::class);
+        $doc = GeneralUtility::makeInstance(\Ubma\UbmaDigitalcollections\Helpers\GetDoc::class);
 
         switch ($type) {
           case 'page-right':

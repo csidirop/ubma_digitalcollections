@@ -1,3 +1,3 @@
-# SLUB Digital Collections (Adjustments for UL Mannheim)
+# UBMA Digital Collections (Adjustments for UL Mannheim)
 
-The Digital Collections by SLUB Dresden.
+The Digital Collections by UBMA Mannheim.

@@ -1,12 +1,12 @@
 {
-  "name": "bfallert/slub-digitalcollections",
+  "name": "bfallert/ubma-digitalcollections",
   "type": "typo3-cms-extension",
   "description": "Templates, Styles and Configuration for the Kitodo.Presentation based Digital Collections by SLUB Dresden. Adaption for UB Mannheim",
-  "homepage": "https://github.com/BFallert/slub_digitalcollections",
+  "homepage": "https://github.com/BFallert/ubma_digitalcollections",
   "keywords": [
     "TYPO3",
     "extension",
-    "slub_digitalcollections"
+    "ubma_digitalcollections"
   ],
   "authors": [
     {
@@ -37,12 +37,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Slub\\SlubDigitalcollections\\": "Classes/"
+      "Ubma\\UbmaDigitalcollections\\": "Classes/"
     }
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "slub_digitalcollections"
+      "extension-key": "ubma_digitalcollections"
     }
   }
 }

@@ -68,4 +68,4 @@ page {
 
 }
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slub_digitalcollections/Configuration/TypoScript/SitePackage/navigation.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ubma_digitalcollections/Configuration/TypoScript/SitePackage/navigation.typoscript">

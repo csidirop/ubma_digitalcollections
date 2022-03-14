@@ -1,5 +1,5 @@
 <?php
-namespace Slub\SlubDigitalcollections\ViewHelpers;
+namespace Ubma\UbmaDigitalcollections\ViewHelpers;
 /***************************************************************
  *  Copyright notice
  *

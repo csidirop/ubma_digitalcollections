@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:slub_digitalcollections/Configuration/TypoScript/Plugin/Kitodo/common.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ubma_digitalcollections/Configuration/TypoScript/Plugin/Kitodo/common.typoscript">
 
 # --------------------------------------------------------------------------------------------------------------------
 # search
@@ -10,7 +10,7 @@ plugin.tx_dlf_search {
 lib.kitodo.fulltext.search = USER
 lib.kitodo.fulltext.search {
     userFunc = Kitodo\Dlf\Plugin\Search->main
-    // storagePid of SLUB Digitale Sammlungen
+    // storagePid of UBMA Digitale Sammlungen
     pages = {$config.kitodo.storagePid}
     // UID of dlfCore0
     solrcore = {$config.kitodo.solr.core}

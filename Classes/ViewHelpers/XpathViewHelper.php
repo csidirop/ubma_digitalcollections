@@ -1,5 +1,5 @@
 <?php
-namespace Slub\SlubDigitalcollections\ViewHelpers;
+namespace Ubma\UbmaDigitalcollections\ViewHelpers;
 
 /***************************************************************
  *  Copyright notice
@@ -70,7 +70,7 @@ class XpathViewHelper extends AbstractViewHelper
         $htmlspecialchars = $arguments['htmlspecialchars'];
         $returnArray = $arguments['returnArray'];
 
-        $doc = GeneralUtility::makeInstance(\Slub\SlubDigitalcollections\Helpers\GetDoc::class);
+        $doc = GeneralUtility::makeInstance(\Ubma\UbmaDigitalcollections\Helpers\GetDoc::class);
 
         $result = $doc->getXpath($xpath);
 
