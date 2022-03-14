@@ -8,7 +8,7 @@
             <div class="brand"><f:link.page pageUid="{settings.rootPage.pid}" title="{settings.rootPage.title}" class="{settings.rootPage.cssClass}">{settings.rootPage.title}</f:link.page></div>
             <nav>
                 <ul class="secondary-nav"><f:cObject typoscriptObjectPath="lib.navigation.kitodo" /></ul>
-                <button type="button" class="nav-toggle" aria-label="<f:translate key='nav.open' extensionName='ubma_digitalcollections' />">
+                <button type="button" class="nav-toggle" aria-label="<f:translate key='nav.open' extensionName='slub_digitalcollections' />">
                     <span></span>
                     <span class="nav-button-bar"></span>
                     <span class="nav-button-bar"></span>
@@ -94,6 +94,7 @@
                             <f:comment>-------------------------------</f:comment>
                             <f:comment> Year </f:comment>
                             <f:comment> emtpy {docTitle-PartsOfPartsTitle}</f:comment>
+                            <f:comment> leer wenn auf Year in der toc-Liste geklickt wird Y C {docTitle-currentTitle} P {docTitle-PartsOfTitle} PP{docTitle-PartsOfPartsTitle} dd {docTitle} </f:comment>
                             <f:if condition="{docTitle-currentTitle}">
                                 <f:then>
                                     <h1 class="year">{docTitle-PartsOfTitle}: {docTitle-currentTitle}</h1>
