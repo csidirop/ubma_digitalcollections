@@ -9,7 +9,8 @@ module.exports = function(grunt) {
                     sourceMap: true,
                     compress: false,
                     yuicompress: false,
-                    optimization: 2
+                    optimization: 2,
+                    sourceMapFileInline: true
                 },
                 files: {
                     "Resources/Public/Css/Digitalcollections.css" : "Resources/Private/Less/Digitalcollections.less",

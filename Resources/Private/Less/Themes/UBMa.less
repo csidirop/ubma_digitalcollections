@@ -227,6 +227,14 @@ body.listview {
     .ui-helper-hidden-accessible {
          display: none;
     }
+
+    .main-column {
+        .tx-dlf-listview {
+            p.tx-dlf-sortinfo {
+                margin-top: 22px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1023px) {
@@ -276,6 +284,51 @@ body.listview {
     }
 }
 
+.hide-in-normal() {
+    &.tx-dlf-kitodo-id,
+    &.tx-dlf-metadata-erscheinungsdatum-year,
+    &.tx-dlf-metadata-year,
+    &.meta_dfgviewer_key,
+    &.meta_dfgviewer_value {
+        display: none;
+    }
+}
+
+div.fwds,
+div.backs {
+    &.over {
+        span {
+            &.first,
+            &.rwnd,
+            &.prev {
+                a,
+                span {
+                    background-color: rgba(255, 255, 255, 0.6);
+                    padding-right: 10px;
+                    min-width: 200px;
+                }
+            }
+            &.next,
+            &.fwd,
+            &.last {
+                a,
+                span {
+                    background-color: rgba(255, 255, 255, 0.6);
+                    min-width: 200px;
+                    padding-right: 90px;
+                }
+            }
+        }
+    }
+}
+
+.tx-dlf-pagebrowser:empty {
+    display: none;
+
+    & + ol.tx-dlf-abstracts {
+        border-top: none;
+    }
+}
 
 body {
     .document-functions {
@@ -441,6 +494,25 @@ body {
         }
 
 
+        // if newspaper view
+        &:not(.metadata-newspaper):not(.metadata-newspaper-year):not(.metadata-newspaper-anchor) {
+
+            .tx-dlf-metadata {
+
+                // Feldbezeichner weniger intensiv wie Feldinhalte
+                dl {
+                    dt {
+                        .hide-in-normal();
+                    }
+                    dd {
+                        .hide-in-normal();
+                    }
+                }
+            }
+        }
+
+
+
     }
 
 
@@ -503,6 +575,13 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .content {
+        aside.sidebar,
+        .main-column {
+            margin-bottom: 110px;
         }
     }
 }

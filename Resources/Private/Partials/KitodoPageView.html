@@ -378,16 +378,15 @@
                 </f:if>
 
                 <f:comment><!-- [METS downloads (XML)] -------------------------- --></f:comment>
-                <f:if condition="<dc:xpath xpath='/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/mods:mods/mods:recordInfo/mods:recordIdentifier/@source' /> == 'http://digi.bib.uni-mannheim.de/oai/'">
+                <f:if condition="<dc:xpath xpath='/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/mods:mods/mods:recordInfo/mods:recordIdentifier/@source' /> == 'maub'">
                   <f:comment><!-- access via OAI does only work for bib.uni-mannheim.de -> access of the location field would be better -------------------------- --></f:comment>
                   <li class="mets-download">
-                    <f:link.external
-                      uri="https://digi.bib.uni-mannheim.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=<dc:xpath xpath='(//mets:dmdSec/mets:mdWrap/mets:xmlData/mods:mods/mods:recordInfo/mods:recordIdentifier)' />"
-                      class="download-document mets"
-                      target="_blank"
-                      title="<f:translate key='download.mets' extensionName='ubma_digitalcollections' />">
-                        <f:translate key="download.mets" extensionName="ubma_digitalcollections" />
-                    </f:link.external>
+                    <f:comment> oai from ddev </f:comment>
+                    <f:link.page pageUid="{oaiPageId}"
+                            class="download-document mets"
+                            target="_blank"
+                            additionalParams="{verb: 'GetRecord', metadataPrefix: 'mets', identifier: '<dc:xpath xpath=\'(//mets:dmdSec/mets:mdWrap/mets:xmlData/mods:mods/mods:recordInfo/mods:recordIdentifier)\' />'}"
+                            title="<f:translate key='download.mets' extensionName='ubma_digitalcollections' />"><f:translate key="download.mets" extensionName="ubma_digitalcollections" /></f:link.page>
                   </li>
                 </f:if>
 

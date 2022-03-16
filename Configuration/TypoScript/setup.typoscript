@@ -68,6 +68,9 @@ page {
                 title = {$config.kitodo.rootPage.title}
                 cssClass = {$config.kitodo.rootPage.cssClass}
             }
+            oaiPage {
+                pid = {$config.kitodo.oaiPage.pid}
+            }
 
             termsOfUsePid = {$config.kitodo.termsOfUsePid}
 
