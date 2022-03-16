@@ -63,6 +63,9 @@ page {
 
             rootPageCssClass = TEXT
             rootPageCssClass.value = {$config.kitodo.rootPage.cssClass}
+
+            oaiPageId = TEXT
+            oaiPageId.value = {$config.kitodo.oaiPage.pid}
         }
     }
 
