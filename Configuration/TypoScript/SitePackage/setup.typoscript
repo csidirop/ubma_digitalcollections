@@ -66,6 +66,9 @@ page {
 
             oaiPageId = TEXT
             oaiPageId.value = {$config.kitodo.oaiPage.pid}
+            
+            searchPageId = TEXT
+            searchPageId.value = {$config.kitodo.searchPage.pid}
         }
     }
 

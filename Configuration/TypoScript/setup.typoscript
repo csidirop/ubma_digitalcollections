@@ -71,6 +71,9 @@ page {
             oaiPage {
                 pid = {$config.kitodo.oaiPage.pid}
             }
+            searchPage {
+                pid = {$config.kitodo.searchPage.pid}
+            }
 
             termsOfUsePid = {$config.kitodo.termsOfUsePid}
 
@@ -181,4 +184,8 @@ page.bodyTag = <body class="collections">
 
 [getTSFE().id == {$config.kitodo.listView}]
 page.bodyTag = <body class="listview">
+[END]
+
+[getTSFE().id == {$config.kitodo.searchPage.pid}]
+page.bodyTag = <body class="searchpage">
 [END]

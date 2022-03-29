@@ -40,6 +40,12 @@ config {
             # cat=plugin.tx_ubmadigitalcollections/links/0303; type=int+; label= Kitodo OAI Page
             pid  = 8
         }
+        
+        # search id config
+        searchPage {
+            # cat=plugin.tx_ubmadigitalcollections/links/0304; type=int+; label= Kitodo Search Page
+            pid  = 6
+        }
 
         # cat=plugin.tx_ubmadigitalcollections/links/0320; type=int+; label= Dlf Storage Pid
         storagePid = 4152
