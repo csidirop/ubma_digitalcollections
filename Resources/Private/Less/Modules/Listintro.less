@@ -9,11 +9,13 @@
  *
  */
 
+body.ubma-body,
 body.collections {
     .main-column {
         + aside.sidebar {
             display: none;
         }
+        .frame-search-form, // The search on search page
         .search-form { // The search on intropage
             h3 {
                 margin-top: 0;
@@ -567,6 +569,7 @@ body.collections {
             }
         }
         @media screen and (min-width: @tabletViewportWidth) {
+            .frame-search-form .tx-dlf-search form .tx-dlf-search-extended,
             .search-form .tx-dlf-search form .tx-dlf-search-extended {
                 input[type="text"] {
                     padding-left: 230px;
@@ -589,6 +592,7 @@ body.collections {
                     color: @primary-color;
                 }
             }
+            .frame-search-form .tx-dlf-search,
             .search-form .tx-dlf-search {
                 padding: 30px 10% 30px 0;
                 form {
@@ -630,6 +634,7 @@ body.collections {
             .tx-dlf-statistics {
                 padding-right: 20%;
             }
+            .frame-search-form .tx-dlf-search,
             .search-form .tx-dlf-search {
                 padding: 30px 0;
             }
