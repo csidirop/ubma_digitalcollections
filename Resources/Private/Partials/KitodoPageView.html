@@ -224,16 +224,21 @@
 
                 <f:comment><!-- [DFG-Viewer] -------------------------- --></f:comment>
                 <f:comment>This didn't work in ddev environment</f:comment>
-                <f:variable
-					name= "oai-page"
-					value="{f:uri.page(
-								pageUid: '{oaiPageId}',
-								absolute: 1
-						  )}" 
-				/>
-								
-				<f:comment>This work in ddev environment</f:comment>								
-                {f:variable(name: 'oai-page', value: 'https://digi.bib.uni-mannheim.de/oai/')}
+                <f:if condition="{f:uri.page(pageUid: '{oaiPageId}', absolute: 1)} != 'https://ddev-kitodo-presentation.ddev.site/oai'">
+					<f:then>
+						<f:variable
+							name= "oai-page"
+							value="{f:uri.page(
+										pageUid: '{oaiPageId}',
+										absolute: 1
+								  )}" 
+						/>
+					</f:then>
+					<f:else>
+						<f:comment>This work in ddev environment</f:comment>								
+						{f:variable(name: 'oai-page', value: 'https://digi.bib.uni-mannheim.de/oai/')}
+					</f:else>
+                </f:if>
                 
                 <f:if condition="<dc:xpath xpath='/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/mods:mods/mods:recordInfo/mods:recordIdentifier/@source' /> == 'maub'">
                     <f:then>
