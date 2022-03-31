@@ -235,6 +235,12 @@ $(function () {
     $('.tx-dlf-tools-imagetools').on('click', function (event) {
         close_all_submenus();
     });
+    $('.page-control').on('click', function (event) {
+        close_all_submenus();
+    });
+    $('.tx-dlf-map').on('click', function (event) {
+        close_all_submenus();
+    });
 
 });
 
