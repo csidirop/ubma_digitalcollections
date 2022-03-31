@@ -1,5 +1,12 @@
 <!-- ###TEMPLATE### -->
-<form action="###ACTION_URL###" method="post" enctype="multipart/form-data">
+<style>
+	/* display search field after 0.5s, so you dont see unformated search form with extended search field on startup */
+	/* visibility: hidden reserve space on screen, so rest of page didn' move after shown the form */
+	#dont_show_on_startup {
+		visibility: hidden;
+	}
+</style>
+<form action="###ACTION_URL###" method="post" enctype="multipart/form-data" id="dont_show_on_startup">
   <label for="tx-dlf-search-query">###LABEL_QUERY###</label>
   <input type="text" id="tx-dlf-search-query" name="###FIELD_QUERY###" value="###QUERY###" />
   ###LOGICAL_PAGE###
