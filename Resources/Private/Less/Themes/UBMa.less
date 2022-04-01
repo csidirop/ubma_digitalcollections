@@ -655,3 +655,25 @@ form#dont_show_on_startup {
 @keyframes cssAnimation {
 	to { opacity: 1; }
 }
+
+.tx-dlf-pagegrid-list {
+	li {
+		.tx-dlf-pagegrid-pagination {
+			.pageindex {
+				font-weight: normal;
+				font-size: smaller;
+				
+				&:after {
+					content: ' - ';
+				}
+			}
+		}
+		
+		&.tx-dlf-pagegrid-cur {
+			.tx-dlf-pagegrid-pagination {
+				background-color: @uma-light-gray;
+				font-style: italic;
+			}
+		}
+	}
+}
