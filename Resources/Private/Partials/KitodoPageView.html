@@ -224,7 +224,7 @@
 
                 <f:comment><!-- [DFG-Viewer] -------------------------- --></f:comment>
                 <f:comment>This didn't work in ddev environment</f:comment>
-                <f:if condition="{f:uri.page(pageUid: '{oaiPageId}', absolute: 1)} != 'https://ddev-kitodo-presentation.ddev.site/oai'">
+                <f:if condition="{f:uri.page(pageUid: '{oaiPageId}', absolute: 1)} != 'https://ddev-kitodo-presentation-ubma.ddev.site/oai'">
 					<f:then>
 						<f:variable
 							name= "oai-page"
@@ -316,7 +316,6 @@
             <ul>
               <f:comment><!-- [Page downloads (PDF)] ------------------------------ --></f:comment>
               <li class="pdf-download has-multilinks">
-                  <span class="multilink-label"><f:translate key="download.pdf.pdfDownload" extensionName="ubma_digitalcollections" /></span>
                   <div class="multilinks">
                       <f:if condition="{dc:downloadLinks(type:'work')}">
                           <f:link.external
@@ -333,14 +332,14 @@
                                   <f:then>
                                       <f:link.external
                                           uri="<dc:xpath xpath='({xpathDownload})[{gp-page}]' />"
-                                          class="download-page pdf left"
+                                          class="download-document pdf left"
                                           target="_blank"
                                           title="<f:translate key='download.pdf.leftPage' extensionName='ubma_digitalcollections' />">
                                             <f:translate key="download.pdf.leftPage" extensionName="ubma_digitalcollections" />
                                       </f:link.external>
                                       <f:link.external
                                           uri="<dc:xpath xpath='({xpathDownload})[{gp-page2}]' />"
-                                          class="download-page pdf right"
+                                          class="download-document pdf right"
                                           target="_blank"
                                           title="<f:translate key='download.pdf.rightPage' extensionName='ubma_digitalcollections' />">
                                             <f:translate key="download.pdf.rightPage" extensionName="ubma_digitalcollections" />
@@ -349,7 +348,7 @@
                                   <f:else>
                                       <f:link.external
                                           uri="<dc:xpath xpath='({xpathDownload})[{gp-page}]' />"
-                                          class="download-page pdf singlepage"
+                                          class="download-document pdf singlepage"
                                           target="_blank"
                                           title="<f:translate key='download.pdf.singlePage' extensionName='ubma_digitalcollections' />">
                                             <f:translate key="download.pdf.singlePage" extensionName="ubma_digitalcollections" />
